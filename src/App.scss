@@ -1,0 +1,22 @@
+// src/App.scss
+body {
+ background-color: #f4f4f9;
+ font-family: 'Arial', sans-serif;
+}
+
+.ticket {
+ background-color: #fff;
+ border: 1px solid #ccc;
+ padding: 1rem;
+ margin-bottom: 1rem;
+ border-radius: 4px;
+
+ h3 {
+  color: #333;
+  margin-bottom: 0.5rem;
+ }
+
+ p {
+  color: #666;
+ }
+}
