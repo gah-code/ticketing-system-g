@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { supabase } from './supabaseClient';
+import { supabase } from '../../src/supabaseClient';
 
 const CreateTicket = () => {
   const [title, setTitle] = useState('');

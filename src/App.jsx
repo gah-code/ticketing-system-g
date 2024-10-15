@@ -1,17 +1,18 @@
-// import React from 'react';
-import CreateTicket from './CreateTicket';
-import TicketList from './TicketList';
-import ErrorBoundary from './ErrorBoundary';
+// src/App.jsx
+import CreateTicket from '../public/components/CreateTicket.jsx';
+import TicketList from '../public/components/TicketList.jsx';
+import { TicketsProvider } from './contexts/TicketsContext.jsx'; // Import the provider
+import './App.css';
 
 const App = () => {
   return (
-    <div className='App'>
-      <h1>Ticketing System</h1>
-      <CreateTicket />
-      <ErrorBoundary>
+    <TicketsProvider>
+      <div className='App'>
+        <h1>Ticketing System</h1>
+        <CreateTicket />
         <TicketList />
-      </ErrorBoundary>
-    </div>
+      </div>
+    </TicketsProvider>
   );
 };
 

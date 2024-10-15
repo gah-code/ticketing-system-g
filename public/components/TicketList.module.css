@@ -1,0 +1,8 @@
+.ticketList {
+  /* margin: 0 auto; */
+  /* padding: 0 calc(2rem / 2); */
+  max-width: 100%;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
